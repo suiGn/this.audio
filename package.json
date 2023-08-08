@@ -1,6 +1,6 @@
 {
   "name": "this.audio",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "this for audio",
   "main": "audio.js",
   "scripts": {
