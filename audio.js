@@ -1,27 +1,36 @@
-// audio.js
-class AudioPlayer {
+class AudioAnalyzer {
     constructor() {
-        this.audioElement = new Audio();
+        this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        this.analyser = this.audioContext.createAnalyser();
+        this.dataArray = new Uint8Array(this.analyser.frequencyBinCount); // For frequency data
     }
 
     load(src) {
-        this.audioElement.src = src;
-        this.audioElement.load();
+        const request = new XMLHttpRequest();
+        request.open('GET', src, true);
+        request.responseType = 'arraybuffer';
+        
+        request.onload = () => {
+            this.audioContext.decodeAudioData(request.response, (buffer) => {
+                const source = this.audioContext.createBufferSource();
+                source.buffer = buffer;
+                source.connect(this.analyser);
+                this.analyser.connect(this.audioContext.destination);
+                source.start(0);
+            });
+        };
+        request.send();
     }
 
-    play() {
-        this.audioElement.play();
-    }
-
-    pause() {
-        this.audioElement.pause();
+    getFrequencyData() {
+        this.analyser.getByteFrequencyData(this.dataArray);
+        return this.dataArray;
     }
 }
 
 // Example usage:
-const player = new AudioPlayer();
-player.load('path_to_your_audio_file.mp3');
-player.play();  // Plays the loaded audio
+const analyzer = new AudioAnalyzer();
+analyzer.load('path_to_your_audio_file.mp3');
 
-// After some time or on some event, you can pause it
-player.pause();
+// Later, you can retrieve frequency data for analysis
+const frequencyData = analyzer.getFrequencyData();
