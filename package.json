@@ -1,0 +1,23 @@
+{
+  "name": "this.audio",
+  "version": "1.0.0",
+  "description": "this for audio",
+  "main": "audio.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suiGn/this.audio.git"
+  },
+  "keywords": [
+    "audio",
+    "data"
+  ],
+  "author": "suiGn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suiGn/this.audio/issues"
+  },
+  "homepage": "https://github.com/suiGn/this.audio#readme"
+}
