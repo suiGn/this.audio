@@ -1,5 +1,5 @@
 // anotherModule.js or in an application that uses your library
-import { thisAudio } from './index.mjs';  // if you're using .js as the extension
+import { thisAudio } from '../index.js';  // if you're using .js as the extension
 
 thisAudio.getRawAudioData('./mp3.mp3').then(data => {
     // Use the raw audio data...
