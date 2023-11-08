@@ -1,3 +1,4 @@
+//audio.js
 class AudioAnalyzer {
     constructor() {
         this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
