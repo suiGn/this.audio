@@ -18,19 +18,19 @@
         }
     },
     "better-docs": {
-        "name": "docs.i.mLearning",
-        "title": "docs.i.mLearning", 
+        "name": "this.audio",
+        "title": "Docs for this.audio", 
         "css": "style.css",
         "trackingCode": "-",
   "hideGenerator": false,
         "navLinks": [
             {
                 "label": "Github",
-                "href": "https://github.com/suiGn/i.mlearning"
+                "href": "https://github.com/suiGn/this.audio"
             },
             {
                 "label": "App",
-                "href": "https://mlearning.studio"
+                "href": "https://neurons.me"
             }
         ]
     }
