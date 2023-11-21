@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/suiGn/this.audio/issues"
   },
-  "homepage": "https://github.com/suiGn/this.audio#readme"
+  "homepage": "https://github.com/suiGn/this.audio#readme",
+  "repoType": "NPM Package"
 }
