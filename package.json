@@ -6,19 +6,20 @@
   "scripts": {
     "test": "test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/suiGn/this.audio.git"
-  },
   "keywords": [
     "audio",
     "data"
   ],
-  "author": "suiGn",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/suiGn/this.audio/issues"
   },
-  "homepage": "https://github.com/suiGn/this.audio#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suiGn/this.audio.git"
+  },
+  "homepage": "https://www.npmjs.com/package/this.audio",
+  "docs": "https://suiGn.github.io/this.audio",
+  "author": "suiGn",
+  "license": "MIT",
   "repoType": "NPM Package"
 }
