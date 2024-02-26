@@ -102,7 +102,7 @@ Rooted in JavaScript, the this. library builds upon public web development stand
 - ### **Open and Collaborative:** 
 The this. library champions open standards. By leveraging public web standards, it invites collaboration, hoping to create a community that continually refines and enhances the bridge between web development and machine learning.
 [neurons.me](https://www.neurons.me)
-[neurons.me/this](https://www.neurons.me/this)
+[neurons.me/this](https://www.neurons.me/all-this)
 
 ## Contributing
 If you have suggestions or issues, please open an issue. We encourage contributions from the community.
