@@ -1,9 +1,10 @@
 {
   "name": "this.audio",
-  "version": "1.1.1",
+  "version": "1.1.11",
   "description": "this for audio",
-  "main": "audio.js",
+  "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "test"
   },
   "keywords": [
@@ -19,6 +20,7 @@
   },
   "homepage": "https://www.npmjs.com/package/this.audio",
   "docs": "https://suiGn.github.io/this.audio",
+  "type": "module",
   "author": "suiGn",
   "license": "MIT",
   "repoType": "NPM Package",
