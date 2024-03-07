@@ -1,9 +1,19 @@
 <img src="./_._.svg" alt="SVG Image" width="123" height="123" style="width123px; height:123px;">
 
-# this.audio
+# THIS.AUDIO
 
+-----------
 
-Introduction
+### [Project Status : Experimental and Under Development, Subject to Major Changes]
+
+The module is in active development, and as such, it is subject to significant changes as we refine our approach and methodologies to best support our goals.
+
+visit: https://neurons.me to learn more.
+
+----------
+
+## Introduction
+
 this.audio represents a pivotal module within the all.this family, focusing on the transformation and standardization of audio data for enhanced machine learning interoperability. The module is under active development, aiming to facilitate the preparation of audio content, ensuring it is machine-learning-ready by abstracting and structuring audio data into a standardized format.
 
 Project Status
@@ -33,22 +43,9 @@ Built on Web Standards: Leveraging JavaScript and public web standards, this.aud
 
 Collaboration and Openness: Emphasizing open standards and community-driven development, this.audio encourages contributions, feedback, and collaborative enhancement to refine the integration of audio processing with machine learning.
 
-How to Contribute
-We invite the community to contribute to this.audio, whether through code contributions, feedback, or feature suggestions. Your input is invaluable in evolving this tool to better serve the machine learning and web development communities.
 
-Licensing and Privacy
-MIT License: this.audio is open-source and freely available for personal and commercial use under the MIT License.
 
-Privacy-Focused: Adhering to privacy standards, this.audio does not collect or store personal data, respecting user privacy and data integrity.
-
-Engage with Us
-For more details, contributions, or feedback, visit our repository or reach out to the this.audio development team. We are excited to see how this.audio will evolve and contribute to the broader goals of machine learning accessibility and data standardization.
-
-neurons.me
-Terms of Use
-Privacy Policy
-https://www.neurons.me/terms-of-use
-https://www.neurons.me/privacy-policy
+----------
 
 # About All.This
 
@@ -68,10 +65,19 @@ https://www.neurons.me/privacy-policy
 
 visit: [Neurons.me Glossary](https://suign.github.io/neurons.me/Glossary) 
 
-Learn more at https://neurons.me
+## License & Policies
 
-**Author:** SuiGn
+- **License**: MIT License (see LICENSE for details).
 
-[By neurons.me](https://neurons.me)
+- **Privacy Policy**: Respects user privacy; no collection/storage of personal data.
 
-<img src="https://suign.github.io/neurons.me/neurons_logo.png" alt="neurons.me logo" width="123" height="123" style="width123px; height:123px;">
+- **Terms of Usage**: Use responsibly. No guarantees/warranties provided. [Terms](https://www.neurons.me/terms-of-use) | [Privacy](https://www.neurons.me/privacy-policy)
+
+  **Learn more** at https://neurons.me
+
+  **Author:** SuiGn
+
+  [By neurons.me](https://neurons.me)
+
+  <img src="https://suign.github.io/neurons.me/neurons_logo.png" alt="neurons.me logo" width="123" height="123" style="width123px; height:123px;">
+
