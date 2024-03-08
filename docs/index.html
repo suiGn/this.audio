@@ -111,7 +111,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Modules</h3><ul><li><a href="module-envDetect.html">envDetect</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Global</h3><ul><li><a href="global.html#createAudioFormatter">createAudioFormatter</a></li><li><a href="global.html#isBrowser">isBrowser</a></li><li><a href="global.html#isNode">isNode</a></li><li><a href="global.html#isPath">isPath</a></li><li><a href="global.html#thisAudio">thisAudio</a></li></ul></div>
                 
             </nav>
         </div>
@@ -145,33 +145,72 @@
 
 
     <section>
-        <article><img src="./_._.svg" alt="SVG Image" width="123" height="123" style="width123px; height:123px;">
+        <article><img src="https://suign.github.io/assets/imgs/thisaudio.png" alt="this.env Art" width="144">
 <h1>THIS.AUDIO</h1>
+<p><strong>this.audio</strong> focuses on the transformation and standardization of audio data for enhanced machine learning interoperability.</p>
 <hr>
 <h3>[Project Status : Experimental and Under Development, Subject to Major Changes]</h3>
-<p>The module is in active development, and as such, it is subject to significant changes as we refine our approach and methodologies to best support our goals.</p>
-<p>visit: https://neurons.me to learn more.</p>
+<p>The module is in active development, and as such, it is subject to significant changes as we refine our approach and methodologies to best support our goals. We are exploring innovative ways to capture, analyze, and standardize audio data, making it readily accessible and interpretable for machine learning models within the <strong>neurons.me ecosystem.</strong></p>
+<p><strong>Visit:</strong> https://neurons.me to learn more.</p>
 <hr>
-<h2>Introduction</h2>
-<p>this.audio represents a pivotal module within the all.this family, focusing on the transformation and standardization of audio data for enhanced machine learning interoperability. The module is under active development, aiming to facilitate the preparation of audio content, ensuring it is machine-learning-ready by abstracting and structuring audio data into a standardized format.</p>
-<p>Project Status
-Under Development: this.audio is currently in the development phase. We are exploring innovative ways to capture, analyze, and standardize audio data, making it readily accessible and interpretable for machine learning models within the neurons.me ecosystem.</p>
-<p>Core Functionality
-Audio Data Abstraction: this.audio delves beyond basic audio playback and embedding functionalities. It focuses on extracting meaningful data from audio inputs, structuring this information into a coherent, standardized format conducive to ML analysis.</p>
-<p>Enhanced Machine Learning Integration: By transforming raw audio into a structured and standardized data model, this.audio paves the way for seamless integration with machine learning pipelines, enabling more sophisticated audio analysis and processing.</p>
-<p>Implementation Snapshot
-Class Definition:</p>
-<p>AudioAnalyzer: A class dedicated to loading, playing, and extracting analytical data from audio sources.
-Core Methods:</p>
-<p>constructor(): Initializes audio context and analyser for audio processing.
-load(src): Loads audio from a source, preparing it for analysis.
-getFrequencyData(): Retrieves frequency data from the audio, crucial for various analytical applications.
-Example Usage:</p>
-<p>Demonstrates how to instantiate AudioAnalyzer, load audio, and retrieve structured frequency data for further processing or ML application.
-Vision and Principles
-Abstraction for ML: Aligning with the all.this philosophy, this.audio is designed to abstract web audio elements, transforming them into formats ready for machine learning, thereby bridifying the gap between web development and ML.</p>
-<p>Built on Web Standards: Leveraging JavaScript and public web standards, this.audio ensures that developers work within a familiar framework while extending their applications into the ML domain.</p>
-<p>Collaboration and Openness: Emphasizing open standards and community-driven development, this.audio encourages contributions, feedback, and collaborative enhancement to refine the integration of audio processing with machine learning.</p>
+<h1>Getting Started</h1>
+<p><strong>this.audio</strong> is designed as a flexible and intuitive JavaScript library to process audio files asynchronously, <strong>providing structured audio data</strong> ready for further use, such as input into machine learning models or other audio processing pipelines.</p>
+<h2>Installation</h2>
+<p>To start using <code>this.audio</code> in your project, install the package via npm:</p>
+<pre class="prettyprint source lang-bash"><code>npm install this.audio
+</code></pre>
+<h2>Importing this.audio</h2>
+<p>Once installed, you can import <code>this.audio</code> into your project like so:</p>
+<pre class="prettyprint source lang-js"><code>import thisAudio from 'this.audio';
+</code></pre>
+<h2>Using this.audio</h2>
+<p><code>this.audio</code> simplifies the task of formatting audio data. It's designed to work seamlessly in both Node.js and browser environments, abstracting away the environmental differences and providing a consistent API.</p>
+<h3>In Node.js:</h3>
+<p>You can pass a file path to <code>thisAudio</code>:</p>
+<pre class="prettyprint source lang-js"><code>thisAudio('./path/to/audio.mp3').then(processedAudio => {
+    console.log('Processed audio data:', processedAudio);
+}).catch(error => {
+    console.error('Error processing audio:', error);
+});
+</code></pre>
+<h3>In the Browser:</h3>
+<p>You can pass a URL or a Blob object to <code>thisAudio</code>:</p>
+<pre class="prettyprint source lang-js"><code>thisAudio(audioBlob).then(processedAudio => {
+    console.log('Processed audio data:', processedAudio);
+}).catch(error => {
+    console.error('Error processing audio:', error);
+});
+</code></pre>
+<h2>Handling Asynchronous Processing</h2>
+<p><code>this.audio</code> utilizes <strong>asynchronous processing</strong> to handle audio files efficiently. The main function <code>thisAudio</code> returns a promise, which you can handle using <code>.then()</code>:</p>
+<pre class="prettyprint source lang-js"><code>let audioPath = './path/to/audio.mp3';
+thisAudio(audioPath).then(processedAudio => {
+    // Work with the processed audio data here
+    console.log(processedAudio);
+});
+</code></pre>
+<p>While <code>.catch()</code> can be used for error handling, <code>this.audio</code> is designed to manage errors internally, returning a structured error object if something goes wrong. Therefore, it's usually sufficient to handle the promise with <code>.then()</code>:</p>
+<pre class="prettyprint source lang-js"><code>thisAudio(audioPath).then(result => {
+    if (result.success) {
+        console.log('Processed audio:', result.data);
+    } else {
+        console.error('Error processing audio:', result.error);
+    }
+});
+</code></pre>
+<h2>Key Features</h2>
+<ul>
+<li>
+<p><strong>Environment Agnostic</strong>: Works in both Node.js and browser environments, detecting and adapting to the environment automatically.</p>
+</li>
+<li>
+<p><strong>Promise-based API</strong>: Leverages JavaScript promises for asynchronous processing, providing a modern API that fits well with contemporary JavaScript practices.</p>
+</li>
+<li>
+<p><strong>Error Handling</strong>: While you can use <code>.catch()</code> for additional error handling, <code>this.audio</code> is designed to encapsulate common error scenarios, returning structured error information within the resolved promise.</p>
+</li>
+</ul>
+<p>By using <code>this.audio</code>, you're adopting a tool that streamlines the audio processing workflow, making it more accessible and manageable regardless of your application's environment or the specific requirements of your audio processing task.</p>
 <hr>
 <h1>About All.This</h1>
 <h2>Modular Data Structures:</h2>
@@ -201,100 +240,6 @@ Abstraction for ML: Aligning with the all.this philosophy, this.audio is designe
     </section>
 
 
-
-
-
-
-
-
-
-<section>
-
-<header>
-    
-        <h2>index.js</h2>
-        
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-        
-            <div class="description">index.js serves as the main exporting file for AudioAnalyzer class.</div>
-        
-
-        
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-        <p class="tag-source">
-            <a href="index.js.html" class="button">View Source</a>
-            <span>
-                <a href="index.js.html">index.js</a>, <a href="index.js.html#line2">line 2</a>
-            </span>
-        </p>
-    
-</dl>
-
-
-        
-    
-    </div>
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
 
 
 

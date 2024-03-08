@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>thisAudio Browser Test</title>
+</head>
+<body>
+    Hello Audio
+    <script type="module">
+        import thisAudio from '../index.js';
+        thisAudio('https://www.google.com').then(processedAudio => {
+          console.log('Processed audio data:', processedAudio);
+        }).catch(error => {
+          console.error('Error processing audio:', error);
+        });
+      </script>
+</body>
+</html>
