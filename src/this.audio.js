@@ -12,7 +12,7 @@ import { createAudioFormatter } from './createAudioFormatter.js';
  * @param {string} audioFilePath - The path or URL to the audio file.
  * @returns {Promise<Object>} A promise that resolves to an object indicating success or failure, with data or an error message.
  */
-async function thisAudio(audioFilePath) {
+async function Audio(audioFilePath) {
     let { formatter, error } = await createAudioFormatter(audioFilePath);
     // If there's an error in creating the formatter, return it immediately
     if (error) {
@@ -29,6 +29,6 @@ async function thisAudio(audioFilePath) {
     }
 }
 
-console.log("this.audio Loaded.");
-export default thisAudio;
+console.log("this .Audio");
+export default Audio;
 
